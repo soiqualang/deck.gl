@@ -6,7 +6,24 @@ This page contains highlights of each deck.gl release. Also check our [vis.gl bl
 
 Release Data: TBD, 2020
 
-(Need screenshots: globe view, pattern fill, MVT cross-tile highlight)
+<table style="border: 0;" align="center">
+  <tbody>
+    <tr>
+      <td>
+        <img style="max-height:200px" src="https://user-images.githubusercontent.com/2059298/84559353-a9d93600-acee-11ea-89ff-b404d798ba17.gif" />
+        <p><i>FillStyleExtension</i></p>
+      </td>
+      <td>
+        <img style="max-height:200px" src="https://user-images.githubusercontent.com/4319728/85549259-183bc380-b620-11ea-83c8-8f4abec732f6.gif" />
+        <p><i>MVTLayer highlight - v8.1</i></p>
+      </td>
+      <td>
+        <img style="max-height:200px" src="https://user-images.githubusercontent.com/4319728/85549267-1a9e1d80-b620-11ea-9aa4-3ec108d08db7.gif" />
+        <p><i>MVTLayer highlight - v8.2</i></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Tiled Layers
 
@@ -24,11 +41,13 @@ Many new features are added to `TileLayer`, `MVTLayer` and `TerrainLayer` to imp
 
 ### GlobeView
 
+<img style="max-height:400px" src="https://raw.github.com/visgl/deck.gl-data/master/images/whats-new/globe.gif" />
+
 For geospatial data, a new projection mode -- globe projection is now available alongside Web Mercator projection. In this release, the feature is exposed via the experimental `GlobeView` class.
 
 Currently there is no base map provider under this view. You may use the `BitmapLayer` or `GeoJsonLayer` to render a backdrop for your data.
 
-See [documentation](/docs/api-reference/globe-view.md) and [example](/examples/get-started/pure-js/globe/) for instructions and limitaions.
+Before getting started with [this example](/examples/get-started/pure-js/globe/), make sure you check out the [docs](/docs/api-reference/globe-view.md) for the limitaions of the current implementation.
 
 
 ### Antimeridian Handling
